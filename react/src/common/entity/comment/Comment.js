@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 const Post = (props) => {
     const defineProfilePath = (id) => {
         let currentUserId = localStorage.getItem('id');
-        console.log("currentId - " + currentUserId);
         if (id == currentUserId) {
             return '';
         }
